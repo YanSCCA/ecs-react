@@ -14,8 +14,8 @@ const firebaseConfig = {
   projectId: "ecs-react-2b703",
   storageBucket: "ecs-react-2b703.firebasestorage.app",
   messagingSenderId: "967690005580",
-  appId: "1:967690005580:web:786fa67cdc6b7720f618e9",
-  measurementId: "G-YBEFZTG78D"
+  appId: "1:967690005580:web:ad5579a2466572c6f618e9",
+  measurementId: "G-QXSTM8PDJ1"
 };
 
 // Initialize Firebase
