@@ -1,4 +1,4 @@
-import Accordion from "./Accordion";
+import Accordion from "./components/Accordion";
 import { FAQS } from "./data";
 
 export default function Faq() {

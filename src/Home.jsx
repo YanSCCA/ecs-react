@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import Task from "./components/Task";
 import { getFormData } from "./utils";
-import Task from "./Task";
+import { AuthContext } from "./AuthContext";
 
 export default function Home() {
   const [todos, setTodos] = useState([]);
+  const user = useContext(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,6 +30,7 @@ export default function Home() {
 
   return (
     <main>
+      <p>{user === null ? "Please sign in" : `Hey, ${user.displayName}`}</p>
       <h1>Uselisst</h1>
       <p>The useless to-do list</p>
       <form onSubmit={handleSubmit}>
