@@ -6,6 +6,8 @@ import Task from "./components/Task";
 import { db } from "./firebase";
 import { getFormData } from "./utils";
 import RandomFact from "./components/RandomFact";
+import RandomDog from "./components/RandomDog";
+import RandomGif from "./components/RandomGif";
 
 export default function Home() {
   const user = useContext(AuthContext);
@@ -80,6 +82,8 @@ export default function Home() {
         <input id="setNickname" type="submit" value="Change Nickname" />
       </form> : null}
       <RandomFact />
+      <RandomDog />
+      <RandomGif />
       <h1>Uselisst</h1>
       <p>The useless to-do list</p>
       <form onSubmit={handleSubmit}>
